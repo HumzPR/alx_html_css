@@ -1,0 +1,140 @@
+/* Reusing styles from previous tasks */
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --primary-color: #FF6565;
+  --secondary-color: #333;
+  --font-family: 'Source Sans Pro', sans-serif;
+  --background-color: #f9f9f9;
+  --text-muted: #666;
+  --container-width: 1000px;
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-family);
+  color: var(--secondary-color);
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+/* Header Section */
+.hero {
+  background: url('assets/hero-bg.jpg') no-repeat center center/cover;
+  padding: 100px 10%;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* "What We Do..." Section */
+.what-we-do {
+  padding: 60px 10%;
+  max-width: var(--container-width);
+  margin: auto;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* "Our Results" Section */
+.our-results {
+  padding: 60px 10%;
+  max-width: var(--container-width);
+  margin: auto;
+  text-align: center;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.result {
+  background-color: var(--background-color);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result i {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.result h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.result p {
+  font-size: 1rem;
+  color: var(--text-muted);
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px 10%;
+  background-color: var(--secondary-color);
+  color: #fff;
+  font-size: 0.9rem;
+}
