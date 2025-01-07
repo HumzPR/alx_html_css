@@ -47,7 +47,7 @@ body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: url('assets/hero-desktop.jpg') no-repeat center center/cover;
+  background: url('assets/headphones_hero_1') no-repeat center center/cover;
   color: white;
 }
 
@@ -79,7 +79,7 @@ body {
 /* Responsive Design */
 @media (max-width: 480px) {
   .hero {
-    background: url('assets/hero-mobile.jpg') no-repeat center center/cover;
+    background: url('assets/headphones_hero_2') no-repeat center center/cover;
     padding: 60px 10px;
   }
 
