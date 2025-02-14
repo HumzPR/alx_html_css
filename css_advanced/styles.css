@@ -1,105 +1,117 @@
-/* Reset and Base Styles */
-* {
+/* Global Styles */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-body {
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
     width: 100%;
-    height: 80px; /* Adjust as per Figma */
-    background-color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 60px; /* Adjust padding as per Figma */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-nav img {
-    width: 150px; /* Adjust logo size as per Figma */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px; /* Adjust spacing between menu items */
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px; /* Match Figma font size */
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ff5733; /* Highlight color */
-}
-
-/* Hero Section */
-.hero {
-    width: 100%;
-    height: 600px; /* Match the height in Figma */
-    background: url('images/hero-bg.jpg') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    background-color: #ff5733;
+    padding: 20px 0;
     text-align: center;
-    padding: 20px;
-    margin-top: 80px; /* Adjust for fixed header */
 }
 
-.hero h1 {
-    font-size: 48px; /* Match Figma */
-    color: #ffffff;
+header h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+}
+
+/* First Section */
+.first-section {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0f0f0;
+}
+
+.first-section h2 {
+    font-size: 32px;
     font-weight: bold;
+    color: #333;
     margin-bottom: 20px;
 }
 
-.hero p {
+.first-section p {
     font-size: 18px;
-    color: #ffffff;
-    max-width: 600px; /* Limit width for better readability */
-    margin-bottom: 30px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.hero button {
-    padding: 12px 30px;
+/* Quote Section */
+.quote-section {
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quote-section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.quote-container {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.quote-container p {
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.quote-container .author {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+/* Quote Navigation Buttons */
+.quote-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.quote-buttons button {
+    padding: 12px 20px;
     background-color: #ff5733;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.hero button:hover {
+.quote-buttons button:hover {
     background-color: #e64c2c;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
 }
